@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic DNA Melting Temperature Calculator</title>
+    <link rel="stylesheet" href="melt_assistant_style.css">
+</head>
+<body>
+    <h1>Basic DNA Melting Temperature Calculator</h1>
+    <form>
+        <label for="sequence">Enter DNA Sequence:</label><br>
+        <input type="text" id="sequence" name="sequence"><br>
+        <label for="sodiumConcentration">Enter Sodium Concentration (M):</label><br>
+        <input type="value" id="sodiumConcentration" name="sodiumConcentration"><br>
+        <button type="button" onclick="calculateTm(); calculateBasicTm()">Calculate Tm</button>
+    </form>
+    <br>
+    <div id="results">
+        <p>Basic Tm: <span id="tm"></span></p>
+        <p>Salt Adjusted Tm: <span id="saTm"></span></p>
+        <p>Sequence Length: <span id="length"></span></p>
+    </div>
+    <script src="melt_assistant_script.js"></script>
+</body>
+</html>

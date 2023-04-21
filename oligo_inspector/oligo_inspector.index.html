@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oligo Analysis</title>
+    <link rel="stylesheet" href="oligo_inspector_style.css">
+</head>
+<body>
+    <div class="mobile">
+        <div>
+            <form id="oligoform" action="submit">
+                <label for="Nucleotide Selector">Select a Nucleotide Type:</label><br>
+                <select id="nucleotide_type" name="Nucleotide">
+                    <option value="Default">Select nucleotide type...</option>
+                    <option value="DNA">DNA</option>
+                    <option value="RNA">RNA</option>
+                </select><br>
+                <label for="sequence">Enter Sequence:</label><br>
+                <input type="text" id="sequence" name="sequence" placeholder="Add Sequence..."><br>       
+                <button type="submit" id="submit_button">Analyze</button>
+                <div class="error" id="error_message">test</div>
+            </form>
+        </div>
+        
+        <div id="results">
+            <h2>Sequences:</h2>
+            <p>
+                <span class="result">Sequence:</span>
+                <span class="label-left">5' - </span>
+                <span class="result" id="sequence_result"></span>
+                <span class="label-right">- 3'</span>
+            </p>
+            <p>
+                <span class="result">Complement Sequence:</span>
+                <span class="label-left">3' - </span>
+                <span class="result" id="complement_sequence_result"></span>
+                <span class="label-right">- 5'</span>
+            </p>
+            <p>
+                <span class="result">Reverse Sequence:</span>
+                <span class="label-left">5' - </span>
+                <span class="result" id="reverse_sequence_result"></span>
+                <span class="label-right">- 3'</span>
+            </p>
+            <p>
+                <span class="result">Reverse Complement:</span>
+                <span class="label-left">3' - </span>
+                <span class="result" id="reverse_complement_result"></span>
+                <span class="label-right">- 5'</span>
+            </p>
+        </div>
+        
+        <div id="results">
+            <h2>Oligo Properties:</h2>
+            <p>Length (nt): <span id="total_length_result"></span></p>
+            <p>Base Composition: <span id="base_composition_result"></span></p>
+            <p>GC Content [%]: <span id="gc_content_result"></span></p>
+            <p>Molecular Weight [d]: <span id="molecular_weight_result"></span></p>
+        </div>
+    </div>
+    <script src="oligo_inspector_script.js" defer></script>
+</body>
+</html>

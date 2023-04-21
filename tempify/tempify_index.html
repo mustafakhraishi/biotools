@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tempify_style.css">
+</head>
+
+<body>
+    <form>
+        <label for="temperature-input">Enter a temperature:</label>
+        <input type="number" id="temperature-input" oninput="convertTemperature()" placeholder="Enter a temperature">
+    </form>
+    <p>
+        <label for="temperature-unit" title="Select the unit of the temperature you want to convert">Convert
+            from:</label>
+        <select id="temperature-unit" oninput="convertTemperature()">
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+        </select>
+        <br>
+        <label for="output-unit" title="Select the unit you want the temperature to be converted to">Convert to:</label>
+        <select id="output-unit" oninput="convertTemperature()">
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+        </select>
+        <br>
+    </p>
+    <div class="results">
+        <p>Result:</p>
+        <p id="result"></p>
+    </div>
+    <script src="tempify_script.js" defer></script>
+</body>
+
+</html>

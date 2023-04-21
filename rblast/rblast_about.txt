@@ -1,0 +1,33 @@
+rBLAST is a bioinformatics tool that will convert RNA mass to moles, calculate the moles of RNA ends, the number of RNA molecules 
+and its molecular weight. The tool will also convert RNA moles to mass.  
+
+A number of different formulas are adopted in this program: 
+
+For mass to moles:
+- moles ssRNA (mol) = mass of ssRNA (g)/((length of ssRNA (nt) x 321.47 g/mol) + 18.02 g/mol)
+- moles of ssRNA ends = moles ssRNA (mol)
+- RNA copy number = moles of ssRNA x 6.022e23 molecules/mol
+
+​For moles to mass:
+- mass of ssRNA (g) = moles of ssRNA (mol) x ((length of ssRNA (nt) x 321.47 g/mol/nt) + 18.02 g/mol)
+
+
+RNA Mass to Moles
+
+The molecular weight of RNA = (number of nucleotides of RNA x average molecular weight of a nucleotide) + 18.02 g/mol
+
+If no RNA sequence in inputted, the average molecular weight of a ribonucleotide  = 321.47 g/mol will be adopted, 
+excluding the water molecule removed during polymerization.
+
+When a sequence is provided, the exact molecular weight is calculated by summing the molecular weights of the individual nucleotides:
+
+Adenosine (A): 313.23
+Uracil (U): 306.16
+Guanine (G): 329.23
+Cytosine (C): 289.20
+
+These weights exclude the water molecule removed during polymerization and 18.02 g/mol is added for the -OH and -H 
+added back to the ends.
+
+RNA copy number
+- Avagadro's Number = 6.022e23 molecules/mol

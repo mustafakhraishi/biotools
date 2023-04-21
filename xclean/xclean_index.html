@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Sequence Formatter</title>
+    <link rel="stylesheet" href="xclean_style.css">
+</head>
+<body>
+    <div class="mobile">
+        <!-- Input field for DNA sequence -->
+        <label for="dna-sequence"></label><br>
+        <input type="text" id="dna-sequence" name="dna-sequence" placeholder="Enter a DNA or RNA sequence here...">
+        <!-- Button to format the input -->
+        <button type="button" id="format-button">Format</button>
+        <!-- Box to display the formatted sequence -->
+        <div id="formatted-sequence-box">
+            <div class="sequence-container">
+                <span class="label-left">5' - </span>
+                <span id="formatted-sequence"></span>
+                <span class="label-right">- 3'</span>
+            </div>
+        </div>
+    </div>
+    <script src="xclean_script.js"></script>
+</body>
+</html>

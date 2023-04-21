@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molarity Calculator</title>
+  <link rel="stylesheet" href="molecule_molarity_style.css">
+</head>
+<body>
+  <div class="mobile">
+    <div class="form-box">
+      <form>
+        <h3>Molarity Calculator</h3>
+        <label for="mass">Mass of Solute</label>
+        <div class="input-group">
+          <input type="text" id="mass" oninput="calculateMolarity()">
+          <select id="massUnits" class="units" oninput="calculateMolarity()">
+            <option value="1">g</option>
+            <option value="0.001">mg</option>
+            <option value="0.000001">ug</option>
+            <option value="0.000000001">ng</option>
+            <option value="0.000000000001">pg</option>
+            <option value="0.000000000000001">fg</option>
+          </select>
+        </div>
+        <label for="volume2">Total Solution Volume</label>
+        <div class="input-group">
+          <input type="text" id="volume2" oninput="calculateMolarity()">
+          <select id="volumeUnits2" class="units" oninput="calculateMolarity()">
+            <option value="1">L</option>
+            <option value="0.001">mL</option>
+            <option value="0.000001">uL</option>
+            <option value="0.000000001">nL</option>
+            <option value="0.000000000001">pL</option>
+            <option value="0.000000000000001">fL</option>
+          </select>
+        </div>
+        <label for="mw2">Molecular Weight</label>
+        <div class="input-group">
+          <input type="text" id="mw2" oninput="calculateMolarity()">g/mol
+        </div>
+      </form>
+      <div class="container">
+        <p>Molarity:</p>
+        <div class="result-box">
+          <p><span id="result2"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="molecule_molarity_script.js" defer></script>
+</body>
+</html>

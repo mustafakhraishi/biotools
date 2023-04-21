@@ -1,0 +1,6 @@
+OptiBind has been created to calculate the optimal annealing temperature (Ta) of a pair of primers based on the nearest neighbour 
+modelling for their respective melting temperatures (Tm).
+
+The nearest neighbour model considers the entropy and enthalpy of nucleotides based upon their specific arrangement in the 
+DNA sequence. These values can then be adjusted for salt and primer concentrations to output a melting temperature. Information 
+about the sequence length and G-C content are also provided.

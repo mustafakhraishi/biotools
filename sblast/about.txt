@@ -1,0 +1,34 @@
+sBLAST is a bioinformatics tool that will convert ssDNA mass to moles, calculate the moles of ssDNA ends, 
+the number of DNA molecules and its molecular weight. The tool will also convert ssDNA moles to mass.  
+
+A number of different formulas are adopted in this program: 
+
+For mass to moles:
+- moles ssDNA (mol) = mass of ssDNA (g)/((length of ssDNA (nt) x 308.97 g/mol/nt) + 18.02 g/mol)
+- moles of ssDNA ends = moles ssDNA (mol)
+- DNA copy number = moles of ssDNA x 6.022e23 molecules/mol
+
+For moles to mass:
+- mass of ssDNA (g) = moles of ssDNA (mol) x ((length of ssDNA (nt) x 308.97 g/mol/bp) + 18.02 g/mol)
+
+
+ssDNA Mass to Moles
+
+​Molecular weight of ssDNA = (number of deoxynucleotide monophosphates of ssDNA x average molecular weight of a deoxynucleotide 
+monophosphate) + 18.02 g/mol.
+
+If no DNA sequence in inputted, the average molecular weight of a deoxynucleotide monophosphate = 308.97 g/mol will be adopted, 
+excluding the water molecule removed during polymerization. The term 18.02 g/mol accounts for the -OH and -H added back to the ends.
+
+When a sequence is provided, the exact molecular weight is calculated by summing the molecular weights of the individual nucleotides:
+
+Adenosine (A): 313.23
+Thymine (T): 304.21
+Guanine (G): 329.23
+Cytosine (C): 289.20
+
+These weights exclude the water molecule removed during polymerization and 18.02 g/mol is added for the -OH and -H added 
+back to the ends.
+
+DNA copy number
+- Avagadro's Number = 6.022e23 molecules/mol

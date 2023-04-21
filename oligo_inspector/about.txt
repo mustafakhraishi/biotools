@@ -1,0 +1,26 @@
+Oligo Inspector analyzes the properties of a unique nucleic acid sequence (DNA or RNA). 
+The program first formats the inputted sequence and then provides the complement sequence, reverse sequence and reverse complement. 
+Additional properties of the nucleic acid sequence such as the length, base composition, G-C content and molecular weight 
+is also computed and displayed. 
+
+The percent of G-C bases are calculated using the number of Guanine (G) or Cytosine (C) bases as a function 
+of the total sequence length. The molecular weight is derived by summing all the individual nucleotides in a sequence. 
+
+​The tool formats DNA or RNA so only characters representing DNA or RNA nucleotides will be recognized. DNA: Adenine (A), Cytosine (C), 
+Guanine (G) and Thymine (T).  RNA: Adenine (A), Cytosine (C), Guanine (G) and Uracil (U). Enter a sequence in the 5' to 3' direction. 
+To calculate the molecular weight of a nucleic acid molecule, the following values are used to determine the weight of each 
+individual nucleotide (g/mol) after the protecting groups are removed:
+
+For DNA:
+
+A: 313.21
+C: 289.18
+G: 329.21
+T:  304.20
+
+For RNA:
+
+A: 313.21
+C: 289.18
+G: 329.21
+U: 306.17

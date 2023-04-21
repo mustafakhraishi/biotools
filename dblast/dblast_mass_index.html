@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNA Calculator</title>
+  <link rel="stylesheet" href="dblast_mass_style.css">
+</head>
+<body>
+  <form>
+    <label for="sequence">DNA Sequence (optional):</label><br>
+    <textarea type="text" id="sequence" name="sequence" placeholder="Enter a Sequence here..." oninput="calculateMoles(); calculateResults();"></textarea><br>
+    <br>
+    <label for="length">DNA length:</label><br>
+    <div class="input-container">
+      <input type="text" id="length" name="length" oninput="calculateMoles(); calculateResults();">
+      <select id="units" name="units" oninput="calculateMoles(); calculateResults();">
+        <option value="bp">bp</option>
+        <option value="kb">kb</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <label for="mass">DNA Mass:</label><br>
+    <div class="input-container">
+      <input type="text" id="mass" name="mass" oninput="calculateMoles(); calculateResults();">
+      <select id="mass_units" name="mass_units" class="unit" oninput="calculateMoles(); calculateResults();">
+        <option value="g">g</option>
+        <option value="mg">mg</option>
+        <option value="ug">ug</option>
+        <option value="ng">ng</option>
+        <option value="pg">pg</option>
+        <option value="fg">fg</option>
+      </select>
+    </div>
+    <br>
+    <br>
+  </form>
+
+  <div class="results">
+    <p>Moles of DNA: <span id="moles_result"></span></p>
+    <p>Moles of DNA 3'/5' ends: <span id="ends"></span></p>
+    <p>DNA Copy Number: <span id="copy_number"></span></p>
+    <p>DNA Molecular Weight: <span id="molecular_weight">---</span></p>
+  </div>
+  <script src="dblast_mass_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+The bioinformatics software, PrimerX, has been designed to calculate the melting temperature (Tm) of a pair of primers 
+based on the nearest neighbour modelling. The nearest neighbour model considers the entropy and enthalpy of nucleotides 
+based upon their specific arrangement in the DNA sequence. These values can then be adjusted for salt and primer 
+concentrations to output a melting temperature. Information about the sequence length and G-C content are also provided.
+
+
+The formulas used for calculating the melting temperature based on a DNA sequence is: 
+- Melting Temperature (Tm) = (1000 x ΔH) / (ΔS + R ln (DNA /2)) - 273.15
+
+
+The melting temperature (Tm) is a measure of the temperature at which the double-stranded DNA structure of a molecule begins to denature and separate into single strands. The Tm is calculated using the following formula: Tm = (1000 x ΔH) / (ΔS + R ln (DNA /2)) - 273.15, where...
+- ΔH is the enthalpy of melting
+- ΔS is the entropy of melting
+- R is the gas constant
+- DNA is the concentration of the DNA molecule
+- "1000" is a conversion factor that converts the units of ΔH from calories per mol to joules per mol
+- "ln" is the natural logarithm function, which is used to calculate the logarithm of the DNA concentration value
+- "2" is a constant value that is used in the formula to calculate the Tm
+- "-273.15" is a conversion factor that converts the units of temperature from degrees Celsius to degrees Kelvin.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="melt_master_style.css">
+</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melting Temperature Calculator</title>
+<body>
+  <div class="mobile">
+    <form>
+      <label for="c">Primer sequence:</label>
+      <input type="text" id="c" name="c" placeholder="Enter a DNA sequence here...">
+      <label for="concPrimer">Primer concentration (nM):</label>
+      <input type="number" id="concPrimer" name="concPrimer">
+      <label for="concSalt">Sodium concentration (mM):</label>
+      <input type="number" id="concSalt" name="concSalt">
+      <label for="concMg">Magnesium concentration (mM):</label>
+      <input type="number" id="concMg" name="concMg">
+      <button type="submit" id="submit_button">Calculate Tm</button>
+    </form>
+  </div>
+  <div>
+    <div id="results">
+      <div id="tmResult" class="melting temp">Tm: </div>
+    </div>
+  </div>
+  <script src="melt_master_script.js"></script>
+</body>
+</html>

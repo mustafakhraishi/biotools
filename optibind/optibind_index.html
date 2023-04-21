@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCR Annealing Temperature Calculator</title>
+  <link rel="stylesheet" href="optibind_style.css">
+</head>
+<body>
+  <div>
+    <form>
+      <label for="dna-melt-temp">Tm of PCR Product:</label><br>
+      <input type="number" id="dna-melt-temp" placeholder="Enter the Tm of your PCR Product" name="dna-melt-temp"><br>
+      <br>
+      <label for="primer-1">Primer 1:</label><br>
+      <input type="text" id="primer-1" placeholder="Enter 5' to 3'" name="primer-1"><br>
+      <output id="primer1-tm"></output>
+
+      <label for="primer-2">Primer 2:</label><br>
+      <input type="text" id="primer-2" placeholder="Enter 5' to 3'" name="primer-2"><br>
+      <output id="primer2-tm"></output>
+
+      <br>
+      <label for="concPrimer">Primer concentration (nM):</label><br>
+      <input type="number" id="concPrimer" name="concPrimer"><br>
+      <label for="concSalt">Salt concentration (mM):</label><br>
+      <input type="number" id="concSalt" name="concSalt"><br>
+      <label for="concMg">Mg concentration (mM):</label><br>
+      <input type="number" id="concMg" name="concMg"><br>
+
+      <input type="button" value="Calculate" onclick="formatPrimer1(); formatPrimer2(); calculatePrimer1(); calculatePrimer2(); calculateTa()">
+    </form>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="results">
+    <h3>Annealing Temperature</h3>
+    <label for="dna-annealing-temp">Ta:</label><br>
+    <output type="text" id="dna-annealing-temp"></output>
+  </div>
+
+  <div class="results primer1">
+    <h3>Primer 1</h3>
+    <label for="primer-1-length">Length:</label><br>
+    <output type="text" id="primer-1-length"></output>
+    <div id="primer-1-error-2" class="error-message"></div>
+    <br>
+    <label for="primer-1-gc-content">GC content:</label><br>
+    <output type="text" id="primer-1-gc-content"></output>
+    <br>
+    <label for="primer-1-tm">Tm:</label>
+    <output type="text" id="primer-1-tm"></output>
+  </div>
+
+  <div class="results primer2">
+    <h3>Primer 2</h3>
+    <label for="primer-2-length">Length:</label><br>
+    <output type="text" id="primer-2-length"></output>
+    <div id="primer-2-error-2" class="error-message"></div>
+    <br>
+    <label for="primer-2-gc-content">GC content:</label><br>
+    <output type="text" id="primer-2-gc-content"></output>
+    <br>
+    <label for="primer-2-tm">Tm:</label>
+    <output type="text" id="primer-2-tm"></output>
+      </div>
+      <script src="optibind_script.js"></script>
+    </body>
+    </html>
+    

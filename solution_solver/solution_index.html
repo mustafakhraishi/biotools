@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="solution_style.css">
+</head>
+<body>
+  <br>
+  <div class="mobile">
+    <div class="form-box">
+      <form>
+        <h3>Dilution Calculator</h3>
+        <br>
+        <p>Stock Solution Concentration</p>
+        <div class="input-group">
+          <input type="text" id="stockConc" oninput="calculateStock()">
+          <select id="stockConcUnits" class="units" oninput="calculateStock()">
+            <option value="1">M</option>
+            <option value="0.001">mM</option>
+            <option value="0.000001">uM</option>
+            <option value="0.000000001">nM</option>
+            <option value="0.000000000001">pM</option>
+            <option value="0.000000000000001">fM</option>
+          </select>
+        </div>
+        <br>
+        <p>Desired Final Concentration</p>
+        <div class="input-group">
+          <input type="text" id="finalConc" oninput="calculateStock()">
+          <select id="finalConcUnits" class="units" oninput="calculateStock()">
+            <option value="1">M</option>
+            <option value="0.001">mM</option>
+            <option value="0.000001">uM</option>
+            <option value="0.000000001">nM</option>
+            <option value="0.000000000001">pM</option>
+            <option value="0.000000000000001">fM</option>
+          </select>
+        </div>
+        <br>
+        <p>Final Solution Volume</p>
+        <div class="input-group">
+          <input type="text" id="finalVol" oninput="calculateStock()">
+          <select id="finalVolUnits" class="units" oninput="calculateStock()">
+            <option value="1">L</option>
+            <option value="0.001">mL</option>
+            <option value="0.000001">uL</option>
+            <option value="0.000000001">nL</option>
+            <option value="0.000000000001">pL</option>
+            <option value="0.000000000000001">fL</option>
+          </select>
+        </div>
+        <br>
+      </form>
+      <br>
+      <!-- Placeholder for result -->
+      <div class="container">
+        <p>Required Volume:</p>
+        <div class="result-box">
+          <p><span id="result3"></span></p>
+        </div>
+      </div>
+      <br>
+      <p><span id="errorfinalConc"></span></p>
+    </div>
+  </div>
+  <script src="solution_script.js"></script>
+</body>
+</html>

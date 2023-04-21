@@ -1,0 +1,13 @@
+Solution Solver was designed to make everyday dilution calculations quicker and easier to perform. 
+Enter the stock solution concentration, desired final concentration and final solution volumes and 
+this program will calculate how much of the stock solution's volume is required to obtain the desired final concentration. 
+
+The formula for calculating a dilution is (C1) (V1) = (C2) (V2) where...
+- C1 is the concentration of the starting solution.
+- V1 is the volume of the starting solution.
+- C2 is the concentration of the final solution.
+- V2 is the volume of the final solution.
+
+This program enables the the user to select a wide range of concentrations and volumes from molar to femtomolar and from litres to femtoliters. 
+Values can be inputted for the stock solution concentration (C1), desired final concentration (C2) and the total final solution volume (V2). 
+Result will be displayed for the required stock solution (V1). The desired concentration must be greater than the stock concentration. 

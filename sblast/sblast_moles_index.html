@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNA Calculator</title>
+  <link rel="stylesheet" href="sblast_moles_style.css">
+</head>
+<body>
+  <form>
+    <label>DNA Sequence (optional):</label><br>
+    <textarea id="dna-sequence" placeholder="Enter a Sequence here..." oninput="calculateMass()"></textarea><br>
+  
+    <label>DNA Length:</label><br>
+    <input type="number" id="dna-length" required oninput="calculateMass()"><br>
+  
+    <div class="radio-input-container">
+      <input type="radio" id="nt" name="length-units" value="nt" checked onchange="calculateMass()">
+      <label for="nt">Nucleotides</label>
+    </div>
+  
+    <div class="radio-input-container">
+      <input type="radio" id="kb" name="length-units" value="kb" onchange="calculateMass()">
+      <label for="kb">Kilobases</label>
+    </div>
+    
+    <div class="moles-container">
+      <label>DNA Moles:</label><br>
+      <div class="input-container">
+        <input type="number" id="dna-moles" required oninput="calculateMass()">
+        <select id="moles-units" required onchange="calculateMass()">
+          <option value="mol">mol</option>
+          <option value="mmol">mmol</option>
+          <option value="umol">umol</option>
+          <option value="nmol">nmol</option>
+          <option value="pmol">pmol</option>
+          <option value="fmol">fmol</option>
+        </select>
+      </div>
+    </div>
+  </form>
+  <br>
+  <br>
+  <div class="results">
+    <div class="mass_results"><p>DNA Mass: <span id="dna-mass"></span></p></div>
+    <div class="mw_results"><p>DNA Molecular Weight: <span id="dna-molecular-weight"></span><p/></div>
+  </div>
+  <script src="sblast_moles_script.js"></script>
+</body>
+</html>

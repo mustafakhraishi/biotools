@@ -1,0 +1,29 @@
+The nACID Quantifier is a tool that calculates the concentration of DNA or RNA in a solution. It does this by using the molecular 
+weight, extinction coefficient, and the wavelength of maximum absorbance (λmax) of the DNA or RNA. The λmax is the specific 
+wavelength at which a substance absorbs the most light, and for DNA, this is typically 260 nm.
+
+ssDNA, dsDNA, RNA
+- concentration = (absorbance * dilutionFactor * standardConcentration) / pathlength
+
+ssOLIGO​
+- concentration = (absorbance / (extinctionCoefficient * pathlength)) * molecularWeight * dilutionFactor
+
+
+​Empirical Rules
+There are certain empirical rules that can be used to estimate the concentration of nucleic acids (DNA or RNA) based on their 
+absorbance at 260 nm (OD260). These rules state that:
+
+- An OD260 value of 1 corresponds to a concentration of 50 μg/ml for double-stranded DNA (dsDNA)
+- An OD260 value of 1 corresponds to a concentration of 33 μg/ml for single-stranded DNA (ssDNA)
+- An OD260 value of 1 corresponds to a concentration of 20 μg/ml for single-stranded DNA oligonucleotides
+- An OD260 value of 1 corresponds to a concentration of 40 μg/ml for RNA
+
+​
+ssOLIGO
+To calculate the molecular weight of a nucleic acid molecule, the following values are used to determine the weight of each individual nucleotide (g/mol) after the protecting groups are removed:
+
+For DNA:
+A: 313.21
+C: 289.18
+G: 329.21
+T:  304.20

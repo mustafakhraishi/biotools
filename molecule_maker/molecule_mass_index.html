@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="molecule_mass_style.css">
+</head>
+<body>
+  <br>
+  <div class="mobile">
+    <div class="form-box">
+      <form>
+        <h3>Mass Calculator</h3>
+        <br>
+        <p>Desired Molarity</p>
+        <div class="input-group">
+          <input type="text" id="molarity" class="inputvalue" oninput="calculateMass()">
+          <select id="molarityUnits" class="units" oninput="calculateMass()">
+            <option value="1">M</option>
+            <option value="0.001">mM</option>
+            <option value="0.000001">uM</option>
+            <option value="0.000000001">nM</option>
+            <option value="0.000000000001">pM</option>
+            <option value="0.000000000000001">fM</option>
+          </select>
+        </div>
+        <br>
+        <p>Total Solution Volume</p>
+        <div class="input-group">
+          <input type="text" id="volume" class="inputvalue" oninput="calculateMass()">
+          <select id="volumeUnits" class="units" oninput="calculateMass()">
+            <option value="1">L</option>
+            <option value="0.001">mL</option>
+            <option value="0.000001">uL</option>
+            <option value="0.000000001">nL</option>
+            <option value="0.000000000001">pL</option>
+            <option value="0.000000000000001">fL</option>
+          </select>
+        </div>
+        <br>
+        <p>Molecular Weight</p>
+        <div class="input-group">
+          <input type="text" id="mw" oninput="calculateMass()"> g/mol<br>
+        </div>
+      </form>
+      <br>
+      <!-- Placeholder for result -->
+      <div class="container">
+        <p>Required Mass:</p>
+        <div class="result-box">
+          <p><span id="result1"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <script src="molecule_mass_script.js"></script>
+</body>
+</html>

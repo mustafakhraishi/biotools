@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleic Acid Concentration Calculator</title>
+    <link rel="stylesheet" href="nacid_quantifier_style.css">
+</head>
+
+<body>
+    <form id="form">
+        <label for="type">Nucleic Acid Type:</label><br>
+        <select id="type" name="type">
+            <option value="ssDNA">ssDNA</option>
+            <option value="dsDNA">dsDNA</option>
+            <option value="ssRNA">ssRNA</option>
+            <option value="custom">Oligo Sequence</option>
+        </select><br><br>
+        <div id="custom-sequence-container" style="display: none;">
+            <label for="customSequence">Enter Custom Sequence:</label><br>
+            <input type="text" id="customSequence" name="customSequence"><br>
+            <br>
+            <select id="customSequenceType" name="customSequenceType">
+                <option value="ssOLIGO">ssOLIGO</option>
+            </select>
+        </div>
+        <br>
+        <label for="absorbance">Absorbance (OD260):</label><br>
+        <input type="number" id="absorbance" name="absorbance"><br>
+        <label for="pathlength">Pathlength (cm):</label><br>
+        <input type="number" id="pathlength" name="pathlength"><br>
+        <label for="dilutionFactor">Dilution Factor:</label><br>
+        <input type="number" id="dilutionFactor" name="dilutionFactor"><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+
+    <div id="results">
+        <h2>Results</h2>
+        <p>Concentration: <span id="concentration"></span></p>
+        <p>Extinction Coefficient: <span id="extinctionCoefficient"></span></p>
+    </div>
+    <script src="nacid_quantifier_script.js" defer></script>
+</body>
+
+</html>

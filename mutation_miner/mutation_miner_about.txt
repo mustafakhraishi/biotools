@@ -1,0 +1,21 @@
+Mutation Miner is a bioinformatics program that has been developed to compare the melting temperatures (Tm) of two different 
+primers that have had point mutations introduced. Primer sequences and target DNA sequences can be inputted to calculate 
+percent of mismatches present. 
+
+Melting Temperature
+
+The formula used for calculating the melting temperature considering point mutation of primers are: 
+- Melting Temperature (Tm) = 81.5 + 0.41(%GC) - 675/N - %mismatch
+
+
+The melting temperature (Tm) is a function of three variables: %GC, N, and %mismatch.
+- %GC is the percentage of the total number of nucleotides in the primer that are either guanine (G) or cytosine (C). These two nucleotides have a higher melting temperature than the other two nucleotides (adenine (A) and thymine (T)), so a higher %GC will result in a higher Tm
+- N is the length of the primer in bases, or nucleotides. As the length of the primer increases, the Tm will generally decrease
+- %mismatch is the percentage of nucleotides in the primer that do not match the target sequence. A higher %mismatch will result in a lower Tm
+
+
+Notes:
+- Primers should aim for a minimum GC content for 40%
+- Primers should aim for a minimum length of 7 nucleotides
+- Desired mutation must be in the middle of the primer with >/= 15 bp on both sides of the mutation/insertion/deletion
+- 3’-end of primers should end in 1 or more G or C

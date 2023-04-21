@@ -1,0 +1,9 @@
+Molecule Maker is a pair of online bioinformatic calculators that return the required mass or molarity of a 
+substance based upon its molecular weight and the total solution volume.
+
+The formulas used for calculation mass or molarity: 
+- Mass (g) = Concentration (mol/L) * Volume (L) * Formula Weight (g/mol)
+- Molarity (mol/L)  = Mass (g) / Volume (L) * Formula Weight (g/mol)
+
+This program enables the the user to select a wide range of molarity, volume and mass. 
+Values can be inputted for the desired molarity, mass of solute, total solution volume and molecular weight.

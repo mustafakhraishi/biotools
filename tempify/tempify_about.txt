@@ -1,0 +1,26 @@
+Tempify is a quick and easy-to-use online calculator that converts between Celsius, Kelvin and Fahrenheit. 
+Simply enter a temperature, select the unit and the desired converted unit and the calculator will return a converted temperature.
+
+Celsius
+- Celsius to Fahrenheit: F = (9/5)C + 32
+- Celsius to Kelvin: K = C + 273.15
+
+Fahrenheit
+- Fahrenheit to Celsius: C = (F - 32) * (5/9)
+- Fahrenheit to Kelvin: K = (F + 459.67) * (5/9)
+
+Kelvin
+- Kelvin to Fahrenheit: F = K * (9/5) - 459.67
+- Kelvin to Celsius: C = K - 273.15
+
+
+The formulas for converting between temperature scales are based on the relationships between the three scales: Celsius, Fahrenheit, and Kelvin.
+
+These formulas assume that the size of the temperature unit (degree) is the same for all three scales.
+- C is the temperature in Celsius
+- F is the temperature in Fahrenheit
+- K is the temperature in Kelvin
+
+The formulas also use basic arithmetic operations, such as addition, subtraction, multiplication, and division. 
+These operations are used to convert the temperature from one scale to another by multiplying or dividing by constants and 
+adding or subtracting offsets.

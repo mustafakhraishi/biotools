@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Mismatch Calculator</title>
+    <link rel="stylesheet" href="mutation_miner_style.css">
+</head>
+
+<body>
+    <div>
+        <form>
+            <label for="primer-1">Primer 1:</label><br>
+            <input type="text" id="primer-1" placeholder="Enter 5' to 3'" name="primer-1"><br>
+
+            <label for="pcrSequence-1">Target Sequence 1:</label><br>
+            <input type="text" id="pcrSequence-1" placeholder="Enter 3' to 5'" name="pcrSequence1"><br>
+
+            <label for="primer-2">Primer 2:</label><br>
+            <input type="text" id="primer-2" placeholder="Enter 5' to 3'" name="primer-2"><br>
+
+            <label for="pcrSequence-2">Target Sequence 2:</label><br>
+            <input type="text" id="pcrSequence-2" placeholder="Enter 3' to 5'" name="pcrSequence2"><br>
+
+            <input type="button" value="Calculate"
+                onclick="formatPrimer1(); formatPrimer2(); formatpcrSequence1(); formatpcrSequence2(); calculatePrimer1(); calculatePrimer2()">
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <div class="results primer 1">
+        <label>
+            <h3>Primer 1</h3>
+        </label>
+        <br>
+        <label for="primer-1-length">Length:</label><br>
+        <output type="text" id="primer-1-length"></output>
+        <div id="primer-1-error-2" class="error-message"></div>
+        <br>
+        <label for="primer-1-gc-content">GC content:</label><br>
+        <output type="text" id="primer-1-gc-content"></output>
+        <div id="primer-1-error" class="error-message"></div>
+        <br>
+        <label for="primer-1-Mismatch">Mismatch:</label><br>
+        <output type="text" id="primer-1-Mismatch"></output><br>
+        <br>
+        <label for="primer-1-tm">Tm:</label>
+        <output type="text" id="primer-1-tm"></output>
+        <br>
+    </div>
+
+    <div class="results primer 2">
+        <label>
+            <h3>Primer 2</h3>
+        </label>
+        <br>
+        <label for="primer-2-length">Length:</label><br>
+        <output type="text" id="primer-2-length"></output>
+        <div id="primer-2-error-2" class="error-message"></div>
+        <br>
+        <label for="primer-2-gc-content">GC content:</label><br>
+        <output type="text" id="primer-2-gc-content"></output>
+        <div id="primer-2-error" class="error-message"></div>
+        <br>
+        <label for="primer-2-Mismatch">Mismatch:</label><br>
+        <output type="text" id="primer-2-Mismatch"></output><br>
+        <br>
+        <label for="primer-2-tm">Tm:</label>
+        <output type="text" id="primer-2-tm"></output>
+        <br>
+    </div>
+
+</body>
+<script src="mutation_miner_script.js" defer></script>
+
+</html>

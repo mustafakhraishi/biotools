@@ -1,0 +1,10 @@
+xClean is a bioinformatics software that will form​at an inputted DNA or RNA sequence and return a clean version. 
+Simply, type or copy and paste a sequence into the field above and click format. 
+
+All non-nucleotide letters, invalid characters (e.g. !, $, ?, /) and numbers are removed from the inputted sequence. 
+If sequences are inputted in lowercase then they will be converted to uppercase and be displayed in the form of triplet nucleotides.
+
+The tool formats DNA or RNA so only characters representing DNA or RNA nucleotides will be recognized. 
+DNA: Adenine (A), Cytosine (C), Guanine (G) and Thymine (T).  
+RNA: Adenine (A), Cytosine (C), Guanine (G) and Uracil (U). 
+This tool does not distinguish between the orientation of DNA or RNA, sequences can be entered in a 5' to 3' or 3' to 5' direction. 
