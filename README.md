@@ -6,7 +6,7 @@ A collection of simple online calculators to assist you in performing life scien
 **Sequence Formatter (xClean)**: Enter a DNA or RNA sequence and receive a formatted version.
 
 
-**Dilutions (Solutiobn Solver)**: Calculate the volume required to dilute a substance to a desired concentration in solution.
+**Dilutions (Solution Solver)**: Calculate the volume required to dilute a substance to a desired concentration in solution.
 
 
 **Concentration (Molecule Maker)**: Determine the mass of a substance for creating a solution or the molarity of a known mass.
